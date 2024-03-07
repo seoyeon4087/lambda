@@ -4,14 +4,15 @@ import crawler.CrawlerService;
 import crawler.CrawlerView;
 import user.UserView;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
         while (true){
-            System.out.println("=== [메인화면] 0-종료 1-회원관리 2-성적표 3-게시판 " +
+            System.out.println("=== [메인화면] 0-종료 1-게시판 2-사용자관리 3-게시판 " +
                     "4-카우프 5-사용자관리(맵) 6-어카운트관리 ===");
             switch (sc.next()){
                 case "0":  return;

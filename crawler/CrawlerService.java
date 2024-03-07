@@ -1,8 +1,10 @@
 package crawler;
 
 import java.io.IOException;
+import java.util.Map;
 
 public interface CrawlerService {
-    void findNamesFromWeb() throws IOException ;
+    Map<String, ?> findNamesFromWeb(Map<String, ?> parmMap) throws IOException ;
+    Map<String, ?> melonChart(Map<String, ?>parmMap) throws IOException;
 
 }

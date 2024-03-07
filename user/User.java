@@ -6,6 +6,7 @@ import lombok.*;
 @Getter
 @ToString(exclude = {"id"})
 public class User {
+    private Long id;
     private String username;
     private String password;
     private String name;
